@@ -65,7 +65,7 @@ TARGET_BIN := $(BINS).bin
 ## Command Section: change these variables based on your commands
 # -----------------------------------------------------------------------------
 # Targets
-.PHONY: all $(TARGET) dirs test clean debug help
+.PHONY: all $(TARGET) dirs test clean debug handin latedays help
 
 # Default target: build the program
 all: $(BINS)
@@ -108,6 +108,15 @@ clean:
 debug: $(TARGET_BIN)
 	@echo "Debugging $(TARGET)..."
 	$(DEBUGGER) $(DEBUGGER_FLAGS) $(TARGET_BIN)
+
+# Handin target: hand in the assignment using the handin program
+handin:
+	@echo "Submitting $(HANDIN_ASGN) via handin..."
+	handin $(HANDIN_CLASS) $(HANDIN_ASGN) *.c *.h Makefile README
+
+# Latedays target: reopen the assignment using the latedays program
+latedays:
+	@echo "Reopening $(HANDIN_ASGN) via latedays..."
 
 # Help target: display usage information
 help:

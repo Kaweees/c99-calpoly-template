@@ -14,12 +14,12 @@
 
 </div>
 
-<a href="https://github.com/Kaweees/c99-template">
+<a href="https://github.com/Kaweees/c99-calpoly-template">
   <img alt="C Logo" src="assets/img/c.svg" align="right" width="150">
 </a>
 
 <div align="left">
-  <h1><em><a href="https://miguelvf.dev/blog/dotfiles/compendium">~c99-template</a></em></h1>
+  <h1><em><a href="https://miguelvf.dev/blog/dotfiles/compendium">~c99-calpoly-template</a></em></h1>
 </div>
 
 <!-- ABOUT THE PROJECT -->
@@ -46,20 +46,14 @@ To get a local copy of the project up and running on your machine, follow these 
 1. Clone the project repository
 
    ```sh
-   git clone https://github.com/Kaweees/c99-template.git
-   cd c99-template
+   git clone https://github.com/Kaweees/c99-calpoly-template.git
+   cd c99-calpoly-template
    ```
 
-2. Install the virtual environment and pre-commit hooks
+2. Build and execute the project
 
    ```sh
-   just install
-   ```
-
-3. Run the project
-
-   ```sh
-   just run <package_name>
+   clear && make && ./target/release/targetname
    ```
 
 <!-- PROJECT FILE STRUCTURE -->
@@ -67,15 +61,12 @@ To get a local copy of the project up and running on your machine, follow these 
 ## Project Structure
 
 ```sh
-c99-template/
+.c99-calpoly-template/
 ├── .github/                       - GitHub Actions CI/CD workflows
-├── scripts/                       - Standalone scripts
-├── shared/
-│   └── utils/                     - Shared utility functions
-├── src/                           - Project packages
-│   ├── core/                      - Core application logic
-│   └── ...                        - Other packages
-├── tests/                         - Project tests (mirrors the main project structure)
+├── include/                       - Project header files
+├── src/                           - Project source files
+│   └── main.c                     - Entry point, main function
+├── Makefile                       - Build script
 ├── LICENSE                        - Project license
 └── README.md                      - You are here
 ```
@@ -87,12 +78,12 @@ The source code for this project is distributed under the terms of the MIT Licen
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Kaweees/c99-template.svg?style=for-the-badge
-[contributors-url]: https://github.com/Kaweees/c99-template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Kaweees/c99-template.svg?style=for-the-badge
-[forks-url]: https://github.com/Kaweees/c99-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/Kaweees/c99-template.svg?style=for-the-badge
-[stars-url]: https://github.com/Kaweees/c99-template/stargazers
+[contributors-shield]: https://img.shields.io/github/contributors/Kaweees/c99-calpoly-template.svg?style=for-the-badge
+[contributors-url]: https://github.com/Kaweees/c99-calpoly-template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Kaweees/c99-calpoly-template.svg?style=for-the-badge
+[forks-url]: https://github.com/Kaweees/c99-calpoly-template/network/members
+[stars-shield]: https://img.shields.io/github/stars/Kaweees/c99-calpoly-template.svg?style=for-the-badge
+[stars-url]: https://github.com/Kaweees/c99-calpoly-template/stargazers
 
 <!-- MARKDOWN SHIELD BAGDES & LINKS -->
 <!-- https://github.com/Ileriayo/markdown-badges -->
